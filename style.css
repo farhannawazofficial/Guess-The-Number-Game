@@ -1,0 +1,93 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #001f3f, #0074D9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#guessInput {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #001f3f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+#message {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+#attempts {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    font-size: 0.9rem;
+    color: #e6e6e6;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .game-container {
+        padding: 30px 20px;
+    }
+}
